@@ -16,7 +16,7 @@
         text-align: center;
         color: #fff;
     }
-    &__promo {
+    &__promo{
         display: flex;
         margin-left: auto;
         justify-content: center;
@@ -34,5 +34,29 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
+    }
+    &__consultation {
+        width: 303px;
+        height: 54px;
+        background-color: #C70101;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn {
+        &__promo {
+            width: 250px;
+        }
+        &__consultation {
+            width: 250px;
+        }
     }
 }

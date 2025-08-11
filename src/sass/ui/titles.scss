@@ -17,6 +17,13 @@
         text-align: center;
         color: #0d0d0d;
     }
+    &__consultation {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #fff;
+    }
     &__subtitle-promo{
         margin-top: 16px;
         font-weight: 500;
@@ -33,6 +40,13 @@
         text-align: center;
         color: #0d0d0d;
     }
+    &__subtitle-consultation {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: #fff;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -40,6 +54,9 @@
         &__promo {
             font-size: 30px;
             text-align: left;
+        }
+        &__consultation {
+            font-size: 30px;
         }
         &__subtitle-promo {
             font-size: 20px;

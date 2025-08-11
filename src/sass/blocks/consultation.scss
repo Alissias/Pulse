@@ -1,0 +1,57 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.consultation {
+    padding: 100px 0;
+    background: url("/src/img/secont_bg.png") center center / cover no-repeat;
+    &__form {
+        margin-top: 36px;
+        display: grid;
+        grid-template-rows: repeat(3, 54px);
+        row-gap: 11px;
+    }
+    &__input {
+        position: relative;
+        width: 300px;
+        height: 50px;
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 0 20px
+        }
+        label {
+            display: block;
+            position: absolute;
+            top: -7px;
+            left: 21px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 471%;
+            color: #4b4b4b;
+        }
+    }
+    &__triggers {
+        margin-top: 8px;
+    }
+    &__policy {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .consultation {
+        padding: 40px 0 30px 0;
+        &__input {
+            width: 285px;
+        }
+    }
+}
