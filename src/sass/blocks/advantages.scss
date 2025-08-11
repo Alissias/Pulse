@@ -1,0 +1,44 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.advantages {
+    padding: 71px 0 64px 0;
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        gap: 65px;
+    }
+    &__item {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 129%;
+        text-align: center;
+        color: #0d0d0d;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advantages {
+        padding: 50px 0 40px 0;
+        &__wrapper {
+            gap: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .advantages {
+        &__wrapper {
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}
