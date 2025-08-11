@@ -1,2 +1,34 @@
 @use "/src/sass/base/mixins.scss" as *;
 @use "/src/sass/base/variables.scss" as *;
+
+.title {
+    &__promo {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+    }
+    &__subtitle-promo{
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        &__promo {
+            font-size: 30px;
+            text-align: left;
+        }
+        &__subtitle-promo {
+            font-size: 20px;
+        }
+    }
+}
