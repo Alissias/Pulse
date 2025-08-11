@@ -32,6 +32,11 @@
             color: #4b4b4b;
         }
     }
+    input:focus + label,
+    input:not(:placeholder-shown) + label {
+        opacity: 0;
+        visibility: hidden;
+    }
     &__triggers {
         margin-top: 8px;
     }
