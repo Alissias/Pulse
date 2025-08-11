@@ -7,19 +7,34 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'animate.css';
 
-const burger = document.querySelector(".burger"),
-	close = document.querySelector(".menu__close"),
-	menu = document.querySelector(".menu");
+// const burger = document.querySelector(".burger"),
+// 	close = document.querySelector(".menu__close"),
+// 	menu = document.querySelector(".menu");
 
-burger.addEventListener("click", () => {
-	menu.classList.add("menu_active");
-	document.body.style.overflow = "hidden";
-});
+// burger.addEventListener("click", () => {
+// 	menu.classList.add("menu_active");
+// 	document.body.style.overflow = "hidden";
+// });
 
-close.addEventListener("click", () => {
-	menu.classList.remove("menu_active");
-	document.body.style.overflow = "";
+// close.addEventListener("click", () => {
+// 	menu.classList.remove("menu_active");
+// 	document.body.style.overflow = "";
+// });
+
+try {
+	document.addEventListener("DOMContentLoaded", () => {
+	const header = document.querySelector("header");
+	const triggerPoint = 300;
+
+	window.addEventListener("scroll", () => {
+		if (window.scrollY > triggerPoint) {
+		header.classList.add("hidden");
+		} else {
+		header.classList.remove("hidden");
+		}
+	});
 });
+} catch(e) {}
 
 // try {
 //   new Swiper('.works__slider', {
@@ -170,14 +185,14 @@ close.addEventListener("click", () => {
 
 
 
-try {
-	const counters = document.querySelectorAll('.skills__rating_counter'),
-		  lines = document.querySelectorAll ('.skills__rating_line span');
+// try {
+// 	const counters = document.querySelectorAll('.skills__rating_counter'),
+// 		  lines = document.querySelectorAll ('.skills__rating_line span');
 
-	counters.forEach( (item, i) => {
-		lines[i].style.width = item.innerHTML;
-	})
-} catch (e) {}
+// 	counters.forEach( (item, i) => {
+// 		lines[i].style.width = item.innerHTML;
+// 	})
+// } catch (e) {}
 
 
 

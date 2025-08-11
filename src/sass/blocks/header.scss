@@ -2,10 +2,10 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     margin-top: 21px;
     &__wrapper{
         display: flex;
@@ -36,6 +36,10 @@
         color: #fff;
         text-decoration: none;
     }
+}
+
+.hidden {
+    transform: translateY(-100%);
 }
 
 @media screen and (max-width: 768px) {
