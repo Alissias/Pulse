@@ -36,32 +36,32 @@ try {
 });
 } catch(e) {}
 
-// try {
-//   new Swiper('.works__slider', {
-//   slidesPerView: 1,
-//   loop: true,
-//   pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//   },
-//   navigation: {
-//       nextEl: ".icon-right-open",
-//       prevEl: ".icon-left-open",
-//   },
-//   breakpoints: {
-//     // when window width is >= 1200px
-//     1200: {
-//       slidesPerView: 3,
-//       spaceBetween: 5,
-//     },
-//     1920: {
-//       slidesPerView: 3,
-//       spaceBetween: 35,
-//     },
-//   },
-//   modules: [Navigation, Pagination], 
-// });
-// } catch(e) {}
+try {
+	new Swiper('.carusel__slider', {
+	slidesPerView: 1,
+	loop: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: ".carusel__slider-right",
+		prevEl: ".carusel__slider-left",
+	},
+	breakpoints: {
+		// when window width is >= 1200px
+		1200: {
+		slidesPerView: 1,
+		spaceBetween: 5,
+		},
+		1920: {
+		slidesPerView: 1,
+		spaceBetween: 35,
+		},
+	},
+	modules: [Navigation, Pagination], 
+});
+} catch(e) {}
 
 
 

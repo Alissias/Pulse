@@ -1,0 +1,80 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.carusel {
+    padding-top: 108px;
+    &__wrapper {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+    &__img {
+        display: block;
+        width: 750px;
+        height: 530px;
+    }
+    &__slider-left{
+        position: absolute;
+        top: 50%;
+        left: -150px;
+        transform: translateY(-50%);
+        border: none;
+        padding: initial;
+    }
+    &__slider-right {
+        position: absolute;
+        top: 50%;
+        right: -150px;
+        transform: translateY(-50%);
+        border: none;
+    }
+}
+.swiper-pagination {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .carusel {
+        &__wrapper {
+            max-width: 600px;
+        }
+        &__img {
+            max-height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carusel {
+        &__wrapper {
+            max-width: 400px;
+        }
+        &__img {
+            max-height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carusel {
+        padding-top: 50px;
+        &__slider-left, &__slider-right {
+            display: none;
+        }
+        .swiper-pagination {
+            display: block;
+            bottom: -25px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carusel {
+        &__wrapper {
+            width: initial;
+        }
+        &__img {
+            height: initial;
+        }
+    }
+}

@@ -3,7 +3,7 @@
 
 .btn {
     &__header {
-        padding: inherit;
+        padding: initial;
         width: 153px;
         height: 32px;
         background-color: #C70101;
@@ -21,7 +21,7 @@
         margin-left: auto;
         justify-content: center;
         align-items: center;
-        padding: inherit;
+        padding: initial;
         margin-top: 65px;
         width: 303px;
         height: 54px;
