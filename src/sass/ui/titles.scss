@@ -24,6 +24,14 @@
         text-transform: uppercase;
         color: #fff;
     }
+    &__catalog {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 150%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #0d0d0d;
+    }
     &__subtitle-promo{
         margin-top: 16px;
         font-weight: 500;
@@ -47,6 +55,13 @@
         line-height: 150%;
         color: #fff;
     }
+    &__subtitle-catalog {
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #0d0d0d;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -57,6 +72,9 @@
         }
         &__consultation {
             font-size: 30px;
+        }
+        &__catalog {
+            font-size: 25px;
         }
         &__subtitle-promo {
             font-size: 20px;

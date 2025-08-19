@@ -20,6 +20,7 @@
         transform: translateY(-50%);
         border: none;
         padding: initial;
+        cursor: pointer;
     }
     &__slider-right {
         position: absolute;
@@ -27,6 +28,8 @@
         right: -150px;
         transform: translateY(-50%);
         border: none;
+        padding: initial;
+        cursor: pointer;
     }
 }
 .swiper-pagination {

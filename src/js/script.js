@@ -65,25 +65,47 @@ try {
 
 
 
-// try {
-// 	const tabs = document.querySelectorAll(".catalog__tab");
-// 	const contents = document.querySelectorAll(".catalog__content-item");
+try {
+	const tabs = document.querySelectorAll(".catalog__tab");
+	const contents = document.querySelectorAll(".catalog__content");
 
-// 	tabs.forEach((tab, index) => {
-// 		tab.addEventListener("click", () => {
-// 			// Удаляем активный класс у всех табов и контента
-// 			tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
-// 			contents.forEach((c) => (c.style.display = "none"));
+	tabs.forEach((tab, index) => {
+		tab.addEventListener("click", () => {
+			// Удаляем активный класс у всех табов и контента
+			tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
+			contents.forEach((c) => (c.style.display = "none"));
 
-// 			// Добавляем активный класс к нажатому табу и показываем соответствующий контент
-// 			tab.classList.add("catalog__tab_active");
-// 			contents[index].style.display = "flex";
-// 		});
-// 	});
+			// Добавляем активный класс к нажатому табу и показываем соответствующий контент
+			tab.classList.add("catalog__tab_active");
+			contents[index].style.display = "flex";
+		});
+	});
 
-// 	// Показываем первый контент при загрузке
-// 	contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
-// } catch (e) {}
+	// Показываем первый контент при загрузке
+	contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
+} catch (e) {}
+
+
+
+function toggleSlide(selector) {
+    const items = document.querySelectorAll(selector);
+
+    items.forEach((item, i) => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const content = document.querySelectorAll('.catalog__item_content')[i];
+            const list = document.querySelectorAll('.catalog__item_list')[i];
+
+            content.classList.toggle('catalog__item_content_active');
+            list.classList.toggle('catalog__item_list_active');
+        });
+    });
+}
+
+// Вызываем для ссылок и кнопок "назад"
+toggleSlide('.catalog__item_link');
+toggleSlide('.catalog__item_back');
 
 
 

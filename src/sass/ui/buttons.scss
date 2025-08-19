@@ -48,6 +48,19 @@
         text-align: center;
         color: #fff;
     }
+    &__catalog {
+        width: 135px;
+        height: 34px;
+        background-color: #C70101;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
 }
 
 @media screen and (max-width: 576px) {
