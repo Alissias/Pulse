@@ -15,6 +15,7 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
+        cursor: pointer;
     }
     &__promo{
         display: flex;
@@ -34,8 +35,9 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
+        cursor: pointer;
     }
-    &__consultation {
+    &__consultation, &__form {
         width: 303px;
         height: 54px;
         background-color: #C70101;
@@ -47,6 +49,7 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
+        cursor: pointer;
     }
     &__catalog {
         width: 135px;
@@ -60,6 +63,7 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
+        cursor: pointer;
     }
 }
 

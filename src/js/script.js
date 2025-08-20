@@ -108,6 +108,32 @@ toggleSlide('.catalog__item_link');
 toggleSlide('.catalog__item_back');
 
 
+// JS: универсальное открытие/закрытие модалок
+const overlay = document.getElementById('overlay');
+
+// Открытие модалки
+document.querySelectorAll('[data-modal]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modalId = btn.getAttribute('data-modal');
+        document.querySelectorAll('.modal').forEach(m => m.style.display = 'none'); // скрыть все
+        document.getElementById(modalId).style.display = 'block'; // показать нужную
+        overlay.classList.add('show');
+    });
+});
+
+// Закрытие по крестику
+document.querySelectorAll('.modal__close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('show');
+    });
+});
+
+// Закрытие по клику на фон
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+        overlay.classList.remove('show');
+    }
+});
 
 // try {
 //   const validator = new JustValidate('form');

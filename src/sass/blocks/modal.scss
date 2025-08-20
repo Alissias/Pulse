@@ -1,0 +1,67 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .56);
+    &.show {
+        display: block;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 382px;
+    min-height: 402px;
+    background-color: #f2f2f2;
+    padding: 38px 40px 40px 40px;
+    &__close {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        cursor: pointer;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+        color: #0d0d0d;
+    }
+    &__form {
+        padding-top: 15px;
+    }
+    &__input {
+        display: flex;
+        width: 300px;
+        height: 50px;
+        border: 1px solid $red;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 13px;font-weight: 500;
+        font-size: 14px;
+        color: #4b4b4b;
+        input {
+            border: none;
+            padding: initial;
+        }
+    }
+    &__policy {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        span {
+            font-size: 12px;
+        }
+    }
+    &__mini {
+        min-height: 140px;
+    }
+}
