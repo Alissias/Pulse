@@ -160,9 +160,8 @@
 
 @media screen and (max-width: 768px) {
     .catalog {
-        &__content {
-            position: absolute;
-            left: 120px;
+        &__item {
+            margin: auto;
         }
     }
 }
