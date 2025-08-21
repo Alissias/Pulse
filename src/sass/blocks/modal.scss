@@ -52,6 +52,7 @@
         input {
             border: none;
             padding: initial;
+            width: 100%;
         }
     }
     &__policy {
@@ -63,5 +64,15 @@
     }
     &__mini {
         min-height: 140px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal {
+        width: 300px;
+        padding: 30px 20px;
+        &__input {
+            width: 100%;
+        }
     }
 }
